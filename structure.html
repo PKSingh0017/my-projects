@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #a{
+            /*padding-top: 1vh;*/
+            float: left;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+        #b{
+            padding-top: 1vh;
+            float: left;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+        #c{
+            padding-top: 1vh;
+            float: right  ;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+
+        #imp{
+            padding-top: 1vh;
+            padding-left: 430px;
+            /*padding-right: 70px;*/
+            float: center ;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+        #d{
+            padding-top: 0vh;
+            padding-left: 20px;
+            /*padding-right: 70px;*/
+            float: top,left ;
+            width: 33.33%;
+            padding-bottom: 400vh;
+        }
+
+    </style>
+
+
+</head>
+<body bgcolor="C0C0C0">
+    <div id="imp">
+    <h1><em>TURN : {{ title }}</em></h1>
+    <h1>{{p}}</h1>
+    <h4>{{q}}</h4>
+    {% if display %}
+        <h2>LAST MOVIE : {{ display }}</h2>
+    {% else %}
+        <h2>Keep Guessing</h2>
+    {% endif %}
+
+    {% block action %}{% endblock %}
+    </div>
+<!--
+    <div id="d" >
+        <p>
+            <h4>Point Table:</h4>
+            Letter Guessed (right) : -1<br>
+            Letter Guessed (wrong) : -2<br>
+            Movie Name Guessed (wrong) : -5<br>
+            Movie Name Guessed (right) : 0
+        </p>
+    </div>
+ -->
+
+    <br>
+
+
+
+    <hr>
+    <h3>Score Card</h3>
+    <div id="a"><h4>A</h4><h2><span style="background-color:black;color:white;padding:10px">{{rA}}</span></h2></div>
+    <div id="b"><h4>B</h4><h2><span style="background-color:black;color:white;padding:10px">{{rB}}</span></h2></div>
+    <div id="c"><h4>C</h4><h2><span style="background-color:black;color:white;padding:10px">{{rC}}</span></h2></div>
+    <hr>
+    {% block links %}{% endblock %}
+</body>
+</html>

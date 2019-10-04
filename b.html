@@ -1,0 +1,19 @@
+{% extends "structure.html" %}
+{% block action %}
+	<form autocomplete="off" name="search" action="./b.html" method="post">
+    	<br>
+    	<br>
+		<label>Enter character:</label>
+		<br>
+		<input autocomplete="off" type="text" name="name">
+		<input type="submit" value="check"><br>
+
+{% endblock %}
+
+{% block links %}
+	</form>
+	<div id="btndiv" ></div>
+	<a href="./c.html"><button id="btn" >NEXT</button></a>
+	<!-- <a href="./"><button id="btn" >Group A</button></a> -->
+	</div>
+{% endblock %}
