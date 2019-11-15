@@ -1,0 +1,5 @@
+This is a file where Data to be read and shown as output
+1 . N balgopal Patro
+2 . 1802040001
+3 . CSE
+4 . Vssut,Burla

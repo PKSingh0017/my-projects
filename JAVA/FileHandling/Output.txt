@@ -1,0 +1,2 @@
+This String wil be read from this file 
+And This will be written in another file Named "Output.txt"
